@@ -1,0 +1,39 @@
+# Ocean Leader Shipping & Logistics - Robots.txt
+# Last Updated: 2025-02-24
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /*.pdf
+Disallow: /*.xlsx
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.oceanleader.lk/sitemap.xml
+Sitemap: https://www.oceanleader.lk/sitemap-mobile.xml
+
+# Crawl-delay for overly aggressive bots
+Request-rate: 30/1m
